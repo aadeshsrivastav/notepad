@@ -1,0 +1,289 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 0 10px;
+}
+
+#heading {
+  font-size: 32px;
+  color: #333;
+  background-color: pink;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#text1 {
+  width: 70%;
+  max-width: 800px;
+  height: 400px;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+#text1::placeholder {
+  color: #040404;
+  font-size: 18px;
+}
+
+#noteDate {
+  width: 50%;         
+  max-width: 800px;    
+  padding: 10px;
+  font-size: 18px;     
+  border-radius: 5px;
+  border: 1px solid #782121;
+  box-sizing: border-box;
+  display: block;
+  margin: 15px auto 10px auto; 
+  height: 40px;         
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#savedNotesContainer {
+  margin-top: 30px;
+}
+
+.savedNote {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px auto;
+  width: 70%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.savedNote p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.savedNote small {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.shareBtn,
+.deleteBtn {
+  font-size: 14px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shareBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  #text1,
+  #noteDate {
+    width: 90%;
+    height: 300px;
+    font-size: 16px;
+  }
+
+  .savedNote {
+    width: 90%;
+  }
+
+  button {
+    width: auto;
+    font-size: 15px;
+  }
+
+  #heading {
+    font-size: 26px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #text1,
+  #noteDate {
+    width: 95%;
+    height: 250px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .savedNote {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+  }
+
+  .shareBtn,
+  .deleteBtn {
+    width: 48%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  #heading {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+
+#noteDate {
+  width: 200px;          
+  max-width: 100%;     
+  padding: 8px 12px;      
+  font-size: 16px;        
+  border-radius: 5px;
+  border: 1px solid #782121;
+  box-sizing: border-box;
+  display: block;
+  margin: 15px auto 10px auto; 
+  height: 38px;          
+}
+
+@media (max-width: 768px) {
+  #noteDate {
+    width: 180px;
+    height: 36px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #noteDate {
+    width: 160px;
+    height: 34px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+#div2 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Textarea */
+#text1 {
+  width: 70%;
+  max-width: 800px;
+  height: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 15px auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Date Input */
+#noteDate {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Save Button */
+#saveBtn {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  #text1 {
+    width: 90%;
+    height: 250px;
+  }
+
+  #noteDate {
+    width: 80%;
+  }
+
+  #saveBtn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #text1 {
+    width: 95%;
+    height: 220px;
+    font-size: 14px;
+  }
+
+  #noteDate {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #saveBtn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
